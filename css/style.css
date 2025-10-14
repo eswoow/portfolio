@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+h1, h3, p, h2{
+    font-family: 'Lexend', sans-serif;
+}
+.side{
+    margin-top: 2%;
+    margin-right: 2%;
+    float: right;
+    position: sticky;
+    font-family: 'Lexend', sans-serif;
+}
+.side > a{
+    margin-right: 30px;
+}
+.right{
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lexend', sans-serif;
+}
+.title{
+    float: left;
+    position: sticky;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+.centered{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+}
+img{
+    width: 30%;
+    height: 30%;
+    border-radius: 5%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+img:hover{
+    width: 60%;
+    height: 60%;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+/* as divs separadas */
+#tela-inicial, #sobre-mim, #projetos, #habilidades, #contatos{
+    margin: 10%;
+}
+.site-andr, .fisica{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
