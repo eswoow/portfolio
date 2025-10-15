@@ -6,6 +6,22 @@
     <title>Portfólio - Max Pina</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+
+        <!-- ES-Shims for older browser compatibility -->
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+
+    <!-- Import Three.js using an import-map -->
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@^0.172.0/build/three.module.min.js"
+        }
+    }
+    </script>
+    <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js "></script>
+
+    <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js "></script>
+
 </head>
 <body>
     <!--menu-->
@@ -26,17 +42,18 @@
     <div id="tela-inicial">
         <div id="left">
             <h1>Olá, meu nome é <span>Max Pina</span></h1>
+            <div class="right">
+            <model-viewer src="models/eswo.gltf" alt="avatar" shadow-intensity=1 id="viewer">
+                <effect-composer msaa="8">
+                </effect-composer>
+            </model-viewer>
+        </div>
             <br>
             <h3>Estudante de programação (HTML, CSS, JS, C#), e GameDev (GDScript).</h3>
             <br>
             <p>Apresento-lhe meu portfólio, incluindo alguns projetos de web, de Csharp, entre outros.<br>Espero que goste.</p>
-            <br>
-        </div>
-        <div id="right">
-            <img src="imgs/foto modelo 3d.jpg" alt="">
         </div>
     </div>
-
     <div id="sobre-mim">
         <h1 class="centered">Sobre mim</h1>
     </div>
@@ -56,6 +73,12 @@
             <br><br>
             <a href="https://eswoow.github.io/calculos-fisicos/">https://eswoow.github.io/calculos-fisicos/</a>
         </div>
+        <br>
+        <h2>CSharp</h2>
+        <br>
+        <h2>Jogos que fiz</h2>
+        <iframe frameborder="0" src="https://itch.io/embed/3734201?border_width=0&amp;bg_color=1d001c&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=000000" width="550" height="165"><a href="https://eswo.itch.io/ghosts-with-umbrellas">Ghosts With Umbrellas by eswo</a></iframe>
+        <br>
     </div>
     <div id="habilidades">
         <h1 class="centered">Habilidades</h1>
@@ -65,5 +88,14 @@
         <br>
 
     </div>
+    <script>
+        const viewer = document.getElementById('viewer');
+
+        document.addEventListener('mousemove', e => {
+        const x = (e.clientX / window.innerWidth);
+        const y = (e.clientY / window.innerHeight);
+        viewer.cameraOrbit = `${x * 235}deg ${90}deg auto`;
+        });
+    </script>
 </body>
 </html>
