@@ -21,7 +21,7 @@
     <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js "></script>
 
     <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js "></script>
-
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!--menu-->
@@ -31,71 +31,110 @@
             <a href="#sobre-mim">Sobre Mim</a>
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
-            <a href="#contatos">Contatos e outros projetos</a>
-            <button onclick="darkMode()" class="darkMode">Modo escuro</button>
+            <a href="#contatos">Contato</a>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br>
     <div id="tela-inicial">
         <div id="left">
             <h1>Olá, meu nome é <span>Max Pina</span></h1>
             <div class="right">
             <model-viewer src="models/eswo.gltf" alt="avatar" shadow-intensity=1 id="viewer">
-                <effect-composer msaa="8">
+                <effect-composer render-mode="quality" msaa="8">
                 </effect-composer>
             </model-viewer>
         </div>
             <br>
             <h3>Estudante de programação (HTML, CSS, JS, C#), e GameDev (GDScript).</h3>
             <br>
-            <p>Apresento-lhe meu portfólio, incluindo alguns projetos de web, de Csharp, entre outros.<br>Espero que goste.</p>
+            <p>Apresento-lhe meu portfólio, incluindo alguns projetos de web, de C#, entre outros.<br>Espero que goste.</p>
         </div>
     </div>
     <div id="sobre-mim">
         <h1 class="centered">Sobre mim</h1>
+        <p>Meu nome é Max Gois Pina Santos</p><br>
+        <p>Atualmente estou estudando o 2º ano do ensino médio</p><br>
+        <p>Quero criar experiencias que tenham um impacto na vida das pessoas, como jogos.</p>
     </div>
     <div id="projetos">
         <h1 class="centered">Projetos</h1>
         <h2>HTML, CSS e JS</h2>
         <div class="site-andr">
-            <h3>Site android</h3>
-            <a href="https://eswoow.github.io/html-atividade/"><img src="imgs/android.png" alt="Site falando sobre o mascote do android"></a>
+            <h3>Site sobre a história do mascote do Android - design flexivel</h3>
+            <a target="_blank" href="https://eswoow.github.io/html-atividade/"><img src="imgs/android.png" alt="Screenshot do site falando sobre o mascote do android"></a>
             <br><br>
-            <a href="https://eswoow.github.io/html-atividade/">https://eswoow.github.io/html-atividade/</a>
+            <a target="_blank" href="https://eswoow.github.io/html-atividade/">https://eswoow.github.io/html-atividade/</a>
+            <br>
+            <p>Esse desafio propõe a pratica do design flexivel em elementos em HTML.</p>
         </div>
         <br><br>
         <div class="fisica">
-            <h3>Calculos fisicos</h3>
-            <a href="https://eswoow.github.io/calculos-fisicos/"><img src="imgs/fisica.png" alt="Calculos de fisica"></a>
+            <h3>Cálculos fisicos</h3>
+            <a target="_blank" href="https://eswoow.github.io/calculos-fisicos/"><img src="imgs/fisica.png" alt="Calculos de fisica"></a>
             <br><br>
-            <a href="https://eswoow.github.io/calculos-fisicos/">https://eswoow.github.io/calculos-fisicos/</a>
+            <a target="_blank" href="https://eswoow.github.io/calculos-fisicos/">https://eswoow.github.io/calculos-fisicos/</a>
+            <p>O foco desse desafio seria diferente do site que se trata do mascote do Android; O foco é trabalhar em Javascript calculos de fisica.</p>
         </div>
         <br>
+        <h2>Jogos</h2>
+        <div class="GWU">
+            <h3>Ghosts with Umbrellas</h3>
+            <iframe frameborder="0" src="https://itch.io/embed/3734201?border_width=0&amp;bg_color=1d001c&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=000000" width="550" height="165"><a href="https://eswo.itch.io/ghosts-with-umbrellas">Ghosts With Umbrellas by eswo</a></iframe>
+            <br>
+            <p>Esse jogo foi feito pra uma Game Jam chamada "Jame Gam", que durava 7 dias. O tema era "Copia barata", e tinha que incluir um guarda-chuva como item importante no jogo. Comecei no 3º dia. Me inspirei em jogos rouguelike, principalmente Vampire Survivors.</p>
+        </div>
+
         <h2>CSharp</h2>
-        <br>
-        <h2>Jogos que fiz</h2>
-        <iframe frameborder="0" src="https://itch.io/embed/3734201?border_width=0&amp;bg_color=1d001c&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=000000" width="550" height="165"><a href="https://eswo.itch.io/ghosts-with-umbrellas">Ghosts With Umbrellas by eswo</a></iframe>
-        <br>
+        <h3>Calculadora de IMC (Indice de massa corporal)</h3>
+        <a target="_blank" href="https://github.com/eswoow/calculadora-imc">https://github.com/eswoow/calculadora-imc</a>
+        <br><br><br><br><br>
+        <a target="_blank" href="https://github.com/eswoow/">Mais projetos aqui.</a>
     </div>
     <div id="habilidades">
         <h1 class="centered">Habilidades</h1>
+        <h2>Programação</h2>
+        <h3>Web</h3>
+        <p>Javascript básico, HTML básico, CSS básico</p>
+        <h3>Aplicativos (PC)</h3>
+        <p>C# básico</p>
+        <h3>Desenvolvimento de Jogos</h3>
+        <p>GDScript intermediario, modelagem 3D básica</p>
+        <h2>Idiomas</h2>
+        <p>Português (Brasileiro) - Nativo</p>
+        <p>Inglês (EUA) - Intermediario</p>
     </div>
     <div id="contatos">
         <h1 class="centered">Fale comigo!</h1>
         <br>
+        <form action="https://formsubmit.co/eswooow@gmail.com" class="centered" method="post">
+            <label for="email">Seu e-mail</label>
+            <br><br>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="mensagem">Mensagem</label>
+            <br><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
 
+            <input type="hidden" name="_subject" value="Novo contato - Portfólio">
+            <input type="hidden" name="_honey" style="display: none">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+        <p>Caso queria enviar uma mensagem mais diretamente, meu e-mail é eswooow@gmail.com, meu Github é <a target="_blank" href="https://github.com/eswoow/">"eswoow"</a></p>
     </div>
     <script>
         const viewer = document.getElementById('viewer');
+        const clamp = (val, min, max) => Math.min(Math.max(val, min), max);
 
         document.addEventListener('mousemove', e => {
-        const x = (e.clientX / window.innerWidth);
-        const y = (e.clientY / window.innerHeight);
-        viewer.cameraOrbit = `${x * 235}deg ${90}deg auto`;
+        const x = e.clientX / window.innerWidth - 0.5;
+
+        let yaw = -x * 180; // gira de acordo com o mouse
+        yaw = clamp(yaw, -90, 90); // limita o giro (ajusta se quiser mais ou menos)
+
+        // pitch travado em 0deg = não mexe pra cima/baixo
+        viewer.cameraOrbit = `${yaw}deg 90deg auto`;
         });
-    </script>
-</body>
+</script>
 </html>

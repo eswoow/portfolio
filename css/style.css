@@ -8,8 +8,13 @@ model-viewer{
     height: 300px;
     padding: 5%;
 }
+body{
+    background-color: #363536;
+}
 h1, h3, p, h2{
     font-family: 'Lexend', sans-serif;
+    color: #d4d2d4;
+    text-shadow: 1px 1px 1px black;
 }
 .side{
     margin-top: 2%;
@@ -21,13 +26,18 @@ h1, h3, p, h2{
 .side > a{
     margin-right: 30px;
 }
+label{
+    color: #a9a8a9;
+}
 .right{
     float: right;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #a9a8a9;
     font-family: 'Lexend', sans-serif;
+    text-shadow: 1px 1px 1px black;
+    transition: text-shadow 0.2s ease-in-out;
 }
 .title{
     float: left;
@@ -36,10 +46,15 @@ a{
 button{
     background-color: rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
+    color: #a9a8a9;
 }
 .centered{
     font-family: 'Lexend', sans-serif;
     text-align: center;
+}
+a:hover{
+    text-shadow: 10px 6px 10px black;
+    transition: text-shadow 0.2s ease-in-out;
 }
 img{
     width: 30%;
@@ -61,4 +76,8 @@ img:hover{
     width: 50%;
     text-align: center;
     float: left;
+}
+.forcedHeader{
+    top: 0;
+    position: sticky;
 }
