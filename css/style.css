@@ -20,7 +20,6 @@ h1, h3, p, h2{
     text-shadow: 1% 1% 1% black;
 }
 .side{
-    margin-top: 3%;
     margin-right: 5%;
     position: sticky;
     font-family: 'Lexend', sans-serif;
@@ -95,7 +94,7 @@ img:hover{
 /* media queries */
 @media (max-width: 768px){
     #menu{
-        display: flex;
+        display: block;
     }
     .side{
         display: none;
