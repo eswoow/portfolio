@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Max Pina</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/script.js" defer></script>
 
         <!-- ES-Shims for older browser compatibility -->
@@ -19,21 +20,32 @@
     }
     </script>
     <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js "></script>
-
     <script type="module" src=" https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js "></script>
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!--menu-->
     <div class="forcedHeader">
+        <button id="menu" class="right" onclick="menuOpening()"><i class="fa fa-bars"></i></button>
+        <br><br>
+        <div id="dropdown">
+            <a href="#tela-inicial">Tela Inicial</a>
+            <br><br>
+            <a href="#sobre-mim">Sobre Mim</a>
+            <br><br>
+            <a href="#projetos">Projetos</a>
+            <br><br>
+            <a href="#habilidades">Habilidades</a>
+            <br><br>
+            <a href="#contatos">Contato</a>
+            <br><br>
+        </div>
         <div class="side">
-            <button id="menu">Menu</button>
             <a href="#tela-inicial">Tela Inicial</a>
             <a href="#sobre-mim">Sobre Mim</a>
             <a href="#projetos">Projetos</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#contatos">Contato</a>
-            
         </div>
     </div>
     <br><br><br><br>
@@ -82,7 +94,8 @@
         <h2>Jogos</h2>
         <div class="GWU">
             <h3>Ghosts with Umbrellas</h3>
-            
+            <br>
+            <a target="_blank" href="https://eswo.itch.io/ghosts-with-umbrellas">https://eswo.itch.io/ghosts-with-umbrellas</a>
             <br>
             <p>Esse jogo foi feito pra uma Game Jam chamada "Jame Gam", que durava 7 dias. O tema era "Copia barata", e tinha que incluir um guarda-chuva como item importante no jogo. Comecei no 3º dia. Me inspirei em jogos rouguelike, principalmente Vampire Survivors.</p>
         </div>
@@ -119,7 +132,6 @@
             <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
             <br><br>
             <button type="submit">Enviar</button>
-
             <input type="hidden" name="_subject" value="Novo contato - Portfólio">
             <input type="hidden" name="_honey" style="display: none">
             <input type="hidden" name="_captcha" value="false">

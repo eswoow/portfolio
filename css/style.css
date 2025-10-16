@@ -3,6 +3,9 @@ html {
     scroll-behavior: smooth;
     overflow-y: scroll;
 }
+#menu{
+    display: none;
+}
 model-viewer{
     width: 30vh;
     height: 30vh;
@@ -23,7 +26,7 @@ h1, h3, p, h2{
     font-family: 'Lexend', sans-serif;
     text-align: right;
 }
-.side > a{
+.side > a, #menu{
     margin-right: 3%;
 }
 label{
@@ -31,6 +34,15 @@ label{
 }
 .right{
     float: right;
+}
+#dropdown{
+    display: none;
+    text-align: right;
+    background-color: rgb(25, 34, 34);
+    margin-right: 3%;
+    margin-left: 80%;
+    padding: 2%;
+    border-radius: 6%;
 }
 a{
     text-decoration: none;
@@ -81,11 +93,11 @@ img:hover{
     position: sticky;
 }
 /* media queries */
-@media screen and (min-width: 700px){
+@media (max-width: 768px){
     #menu{
         display: flex;
     }
-    #side > a{
-        display: hidden;
+    .side{
+        display: none;
     }
 }
